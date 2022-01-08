@@ -24,6 +24,11 @@ The user should clone the repo, must have Node.js, Inquirer, and Jest installed.
 5. After all members have been added, choose the "Create the Page" option.
 6. The created page will be generated in the dist/ folder
 
+![Team Profile Generator](https://user-images.githubusercontent.com/90013822/148663299-36d51ca4-630f-489d-a7b2-6f13fd34d8c4.gif)
+
+
+This is the direct link:
+https://drive.google.com/file/d/1122dJlm12MwGkldqnrVXLJJdrYUt5ZfD/view
 
 
 
