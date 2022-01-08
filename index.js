@@ -1,8 +1,16 @@
-// required modules 
+// required modules
+const Manager = require("./lib/Manager");
+const Engineer = require("./lib/Engineer");
+const Intern = require("./lib/Intern");
+const path = require("path");
 const fs = require('fs');
 const inquirer = require('inquirer');
-const { breakList } = require('prelude-ls');
 const util = require('util');
+const OUTPUT_DIR = path.resolve(__dirname, "dist");
+const outputPath = path.join(OUTPUT_DIR, "index.html");
+const generatePage = require("./src/htmlTemplate")
+
+teamArray = [];
 
 // Function to choose what type of employee to add
 function createTeam() {
@@ -10,7 +18,7 @@ function createTeam() {
         type: "list",
         name: "addEmployeePrompt",
         message: "What type of employee would you like to add to your Dream Team?",
-        choices: ["Manager", "Engineer", "Intern", "Cancel"]
+        choices: ["Manager", "Engineer", "Intern", "Create the page"]
     }]).then(function(userInput) {
         switch (userInput.addEmployeePrompt) {
             case "Manager":
@@ -24,6 +32,7 @@ function createTeam() {
                 break;
 
             default:
+                htmlBuilder()
         }
     })
 }
@@ -210,3 +219,12 @@ function addIntern() {
         createTeam()
     });
 }
+
+function htmlBuilder() {
+    console.log("Dream Team created!")
+
+    fs.writeFileSync(outputPath, generatePage(teamArray), "UTF-8")
+
+}
+
+createTeam()
