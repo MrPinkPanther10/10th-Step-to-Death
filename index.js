@@ -132,19 +132,19 @@ function addEngineer() {
         },
         {
             type: "input",
-            name: "engineerOfficeNumber",
-            message: "What is the engineer's office number?",
+            name: "engineerGithub",
+            message: "What is the engineer's Github username?",
             validate: nameInput => {
                 if (nameInput) {
                     return true;
                 } else {
-                    console.log('Please enter the office number!');
+                    console.log('Please enter the Github username!');
                     return false;
                 }
             }
         }
     ]).then(answers => {
-        const engineer = new Manager(answers.engineerName, answers.engineerId, answers.engineerEmail, answers.engineerOfficeNumber);
+        const engineer = new Engineer(answers.engineerName, answers.engineerId, answers.engineerEmail, answers.engineerGithub);
         teamArray.push(engineer);
         createTeam()
     });
@@ -193,19 +193,19 @@ function addIntern() {
         },
         {
             type: "input",
-            name: "internOfficeNumber",
-            message: "What is the intern's office number?",
+            name: "internSchool",
+            message: "Which school does the intern attend to?",
             validate: nameInput => {
                 if (nameInput) {
                     return true;
                 } else {
-                    console.log('Please enter the office number!');
+                    console.log('Please enter the school name!');
                     return false;
                 }
             }
         }
     ]).then(answers => {
-        const intern = new Manager(answers.internName, answers.internId, answers.internEmail, answers.internOfficeNumber);
+        const intern = new Intern(answers.internName, answers.internId, answers.internEmail, answers.internSchool);
         teamArray.push(intern);
         createTeam()
     });
