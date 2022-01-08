@@ -3,7 +3,9 @@
 ![Github licence](http://img.shields.io/badge/license-MIT-blue.svg)
     
 ## Description 
-This project is created to generate a high-quality README file by asking user a series of question thru Node.js
+This project is build a Node.js command-line application that takes in information about employees on a software engineering team and generates an HTML webpage that displays summaries for each person. Because testing is key to making code maintainable, you’ll also write unit tests for each part of your code and ensure that it passes all of them.
+
+
 ## Table of Contents
 * [Installation](#installation)
 * [Usage](#usage)
