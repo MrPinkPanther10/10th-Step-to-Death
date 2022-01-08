@@ -30,6 +30,8 @@ The user should clone the repo, must have Node.js, Inquirer, and Jest installed.
 This is the direct link:
 https://watch.screencastify.com/v/ZEOabCRzchmxggAEghMz
 
+This is the screenshot of the final product
+![Dream Team](https://user-images.githubusercontent.com/90013822/148663397-b237fced-898b-4428-a5ba-2f3dff21a731.JPG)
 
 
 ## License 
