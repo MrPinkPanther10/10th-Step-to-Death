@@ -28,7 +28,7 @@ The user should clone the repo, must have Node.js, Inquirer, and Jest installed.
 
 
 This is the direct link:
-https://drive.google.com/file/d/1122dJlm12MwGkldqnrVXLJJdrYUt5ZfD/view
+https://watch.screencastify.com/v/ZEOabCRzchmxggAEghMz
 
 
 
