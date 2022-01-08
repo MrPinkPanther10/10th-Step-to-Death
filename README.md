@@ -32,6 +32,7 @@ This project is license under MIT
 N/A
 
 ## Tests
+npm run test
 node index.js
     
 ## Questions
