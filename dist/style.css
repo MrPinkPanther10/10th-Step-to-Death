@@ -1,0 +1,21 @@
+.jumbotron {
+    border-radius: 0;
+}
+
+.employee-card {
+    box-shadow: 5px 5px 5px gray;
+    margin: 1rem;
+    border: none;
+}
+
+.card-header {
+    background-color: #f2a3b3;
+}
+
+.card-body {
+    background-color: rgb(240, 240, 240);
+}
+
+.team-heading {
+    background-color: rgba(85, 18, 70, 0.5);
+}
