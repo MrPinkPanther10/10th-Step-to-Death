@@ -1,4 +1,3 @@
-const { test, expect } = require("@jest/globals");
 const Manager = require("../lib/Manager");
 
 test("can create office number", () => {
@@ -8,8 +7,8 @@ test("can create office number", () => {
 })
 
 test("testing getOfficeNumber will pass testOfficeNumber", () => {
-    const testOfficeNumber = 9,
-        const emp = new Manager("JamesJ", 18, "chumilyrockz@yahoo,com", testOfficeNumber);
+    const testOfficeNumber = 9;
+    const emp = new Manager("JamesJ", 18, "chumilyrockz@yahoo,com", testOfficeNumber);
     expect(emp.getOfficeNumber()).toBe(testOfficeNumber);
 })
 
