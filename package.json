@@ -1,0 +1,25 @@
+{
+    "devDependencies": {
+        "jest": "^27.4.7"
+    },
+    "dependencies": {
+        "inquirer": "^8.2.0"
+    },
+    "name": "challenge-10",
+    "version": "1.0.0",
+    "main": "index.js",
+    "directories": {
+        "lib": "lib"
+    },
+    "scripts": {
+        "test": "jest --verbose test/*",
+        "start": "node app.js"
+    },
+    "author": "James Dabajo",
+    "license": "ISC",
+    "description": "add employees thru OOP",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/MrPinkPanther10"
+    }
+}
